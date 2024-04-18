@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Table content</h2>
+        <table >
+            <thead>
+                <tr>
+                    <th>Price</th>
+                    <th>Area</th>
+                    <th>bedroom</th>
+                    <th>bathroom</th>
+                    <th>stories</th>
+                    <th>Mainroad</th>
+                    <th>guestrooms</th>
+                    <th>basement</th>
+                    <th>hotwater</th>
+                    <th>airconditioner</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in housing %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                    <td>{{ row[5] }}</td>
+                    <td>{{ row[6] }}</td>
+                    <td>{{ row[7] }}</td>
+                    <td>{{ row[8] }}</td>
+                    <td>{{ row[9] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+       
+    </div>
+</body>
+</html>
